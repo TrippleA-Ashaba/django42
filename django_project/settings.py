@@ -37,10 +37,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Third party libraries
+    "django_browser_reload",
+    #  Local Libraries
+    "main",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    # For dev use only
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    # ---------------------------------------------------------
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
