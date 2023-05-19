@@ -13,3 +13,49 @@ This repository serves as a starting point or template for new Django apps, prov
 [![django-debug-toolbar](https://img.shields.io/badge/django--debug--toolbar-v4.1.0-blue)](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html)
 
 [![python-dotenv](https://img.shields.io/badge/python--dotenv-v1.0.0-orange)](https://pypi.org/project/python-dotenv/)
+
+## Usage
+
+To use this repo
+
+### Clone or Fork
+
+```bash
+    $ git clone https://github.com/TrippleA-Ashaba/django-app-skeleton.git
+    $ cd django-skeleton-app
+
+```
+
+### Create a Virtual Environment
+
+```bash
+    # windows
+    $ python -m venv .venv
+    $ source .venv/Scripts/activate
+```
+
+```bash
+    # unix
+    $ python3 -m venv .venv
+    $ source .venv/bin/activate
+```
+
+### Install dependencies
+
+```bash
+    $ pip install -r requirements.txt
+```
+
+### Add Environment variables
+
+create a `.env` file and add variables from `sample.env`.
+
+### Runserver
+
+```bash
+    $ python manage.py runserver
+
+    #visit 127.0.0.1:8000
+```
+
+### Enjoy!!!
