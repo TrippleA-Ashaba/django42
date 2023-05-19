@@ -1,4 +1,4 @@
-![tests](https://img.shields.io/badge/tests-passing-brightgreen) ![mit](https://img.shields.io/badge/licence-MIT-yellow)
+[![tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://www.djangoproject.com/start/overview/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Django App Skeleton
 
