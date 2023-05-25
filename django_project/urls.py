@@ -16,10 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("__reload__/", include("django_browser_reload.urls")),
-    path("__debug__/", include("debug_toolbar.urls")),
     path("", include("main.urls")),
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+        path("__reload__/", include("django_browser_reload.urls")),
+        path("__debug__/", include("debug_toolbar.urls")),
+    ]
