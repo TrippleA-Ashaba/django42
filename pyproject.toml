@@ -1,0 +1,33 @@
+[tool.ruff]
+# Set the Line Length
+line-length = 88    # same as black
+fix = true          # Auto fix fixable
+exclude = [
+    ".venv",
+    "migrations",
+    "tests.py"
+]
+
+# Select rules to follow 
+select = [
+    "E",   # pycodestyle
+    "F",   # pyflakes
+    'I',   # isort
+    #'D',   # pycodestyle
+]
+
+
+[tool.ruff.pydocstyle]
+# Use Numpy-style docstrings.
+convention = "numpy"
+
+[tool.ruff.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 5
+
+
+
+################### Commands #####################
+#$ ruff check .                                  # check for errors
+#$ ruff check --fix .                            # check and fix fixable
+#$ ruff check --select [rule] --add-noqa .       # add a noqa to ignore certain errors
