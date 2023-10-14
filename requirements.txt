@@ -3,5 +3,6 @@ Django==4.2.6
 django-browser-reload==1.12.0
 django-debug-toolbar==4.2.0
 python-dotenv==1.0.0
+ruff==0.0.292
 sqlparse==0.4.4
 tzdata==2023.3
