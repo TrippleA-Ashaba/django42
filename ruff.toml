@@ -1,6 +1,5 @@
-[tool.ruff]
 # Set the Line Length
-line-length = 88    # same as black
+line-length = 120
 fix = true          # Auto fix fixable
 exclude = [
     ".venv",
@@ -17,11 +16,11 @@ select = [
 ]
 
 
-[tool.ruff.pydocstyle]
+[pydocstyle]
 # Use Numpy-style docstrings.
 convention = "numpy"
 
-[tool.ruff.mccabe]
+[mccabe]
 # Flag errors (`C901`) whenever the complexity level exceeds 5.
 max-complexity = 5
 
